@@ -1,7 +1,7 @@
 {
   "name": "AuthenticationLibrary",
   "version": "0.1.0",
-  "summary": "A short description of AuthenticationLibrary.",
+  "summary": "A library for implementing an authentication flow using AWS Cognito.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/DionicioCrz/AuthenticationLibrary",
   "license": {
@@ -16,7 +16,27 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
-  "source_files": "AuthenticationLibrary/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "AuthenticationLibrary/Classes/**/*",
+  "dependencies": {
+    "AWSMobileClient": [
+      "~> 2.30.2"
+    ],
+    "AWSUserPoolsSignIn": [
+      "~> 2.30.2"
+    ],
+    "AWSAuthUI": [
+      "~> 2.30.2"
+    ],
+    "KeychainSwift": [
+
+    ]
+  },
+  "frameworks": [
+    "SwiftUI",
+    "Combine"
+  ],
+  "swift_version": "5.0"
 }

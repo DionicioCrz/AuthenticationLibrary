@@ -1,15 +1,59 @@
 PODS:
-  - AuthenticationLibrary (0.1.0)
+  - AuthenticationLibrary (0.1.0):
+    - AWSAuthUI (~> 2.30.2)
+    - AWSMobileClient (~> 2.30.2)
+    - AWSUserPoolsSignIn (~> 2.30.2)
+    - KeychainSwift
+  - AWSAuthCore (2.30.3):
+    - AWSCore (= 2.30.3)
+  - AWSAuthUI (2.30.3):
+    - AWSAuthCore (= 2.30.3)
+    - AWSCore (= 2.30.3)
+  - AWSCognitoIdentityProvider (2.30.3):
+    - AWSCognitoIdentityProviderASF (= 2.30.3)
+    - AWSCore (= 2.30.3)
+  - AWSCognitoIdentityProviderASF (2.30.3):
+    - AWSCore (= 2.30.3)
+  - AWSCore (2.30.3)
+  - AWSMobileClient (2.30.3):
+    - AWSAuthCore (= 2.30.3)
+    - AWSCognitoIdentityProvider (= 2.30.3)
+    - AWSCognitoIdentityProviderASF (= 2.30.3)
+    - AWSCore (= 2.30.3)
+  - AWSUserPoolsSignIn (2.30.3):
+    - AWSAuthCore (= 2.30.3)
+    - AWSCognitoIdentityProvider (= 2.30.3)
+    - AWSCore (= 2.30.3)
+  - KeychainSwift (20.0.0)
 
 DEPENDENCIES:
   - AuthenticationLibrary (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AWSAuthCore
+    - AWSAuthUI
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSMobileClient
+    - AWSUserPoolsSignIn
+    - KeychainSwift
 
 EXTERNAL SOURCES:
   AuthenticationLibrary:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AuthenticationLibrary: ed194b9c9bd6c1dbe88261b879fb32a95e5ca686
+  AuthenticationLibrary: 31ca6526d5379da93f98294df9f4381e71991d77
+  AWSAuthCore: d494562da27174c8374f92b9ccf524cd657ff30d
+  AWSAuthUI: 6fedff2c6e7140ece676c35e16dfb143a404a912
+  AWSCognitoIdentityProvider: cfbf6a2e4a1846d3f686b58ee11b7f59e3aee018
+  AWSCognitoIdentityProviderASF: 2e10ef7403094f1f7301873206ad1aa405249474
+  AWSCore: 58801179c0e2fae31e4a5e1f5000eaea78c8f1ce
+  AWSMobileClient: 6b15756b4960de4a3868d5b3efd0db27bc2d9a2a
+  AWSUserPoolsSignIn: 254f72efa7a76a125bb36c4d902606f48968fec6
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
 
 PODFILE CHECKSUM: 02750dc293018c738f4bf6e0833422c1f2797444
 
