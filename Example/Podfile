@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'AuthenticationLibrary_Example' do
+  pod 'AuthenticationLibrary', :path => '../'
+
+  target 'AuthenticationLibrary_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
