@@ -1,0 +1,6 @@
+framework module AuthenticationLibrary {
+  umbrella header "AuthenticationLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - AuthenticationLibrary (0.1.0)
+
+DEPENDENCIES:
+  - AuthenticationLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  AuthenticationLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AuthenticationLibrary: ed194b9c9bd6c1dbe88261b879fb32a95e5ca686
+
+PODFILE CHECKSUM: 02750dc293018c738f4bf6e0833422c1f2797444
+
+COCOAPODS: 1.16.2
