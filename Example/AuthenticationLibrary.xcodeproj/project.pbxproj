@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0C186454677312DC9792936D /* Pods-AuthenticationLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticationLibrary_Example.debug.xcconfig"; path = "Target Support Files/Pods-AuthenticationLibrary_Example/Pods-AuthenticationLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4B0B663882B4A0AE3C13C1F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4B0B663882B4A0AE3C13C1F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5574E85B46B081ACF19C8DF5 /* Pods-AuthenticationLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticationLibrary_Tests.release.xcconfig"; path = "Target Support Files/Pods-AuthenticationLibrary_Tests/Pods-AuthenticationLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AuthenticationLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenticationLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,11 +41,11 @@
 		607FACE51AFB9204008FA782 /* AuthenticationLibrary_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticationLibrary_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		671054EBD534D6912CD125BB /* AuthenticationLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AuthenticationLibrary.podspec; path = ../AuthenticationLibrary.podspec; sourceTree = "<group>"; };
+		671054EBD534D6912CD125BB /* AuthenticationLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AuthenticationLibrary.podspec; path = ../AuthenticationLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		77615A113AFE4E3E52F8ABF5 /* Pods-AuthenticationLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticationLibrary_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AuthenticationLibrary_Tests/Pods-AuthenticationLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8387A41418CD8BDD4EBACB06 /* Pods_AuthenticationLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthenticationLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6224253A7D3639700C6AB6D /* Pods_AuthenticationLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthenticationLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9FAE1E6BE5F87A8A0BE3D38 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C9FAE1E6BE5F87A8A0BE3D38 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CF1FBBC13ED09E06BB9E076C /* Pods-AuthenticationLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticationLibrary_Example.release.xcconfig"; path = "Target Support Files/Pods-AuthenticationLibrary_Example/Pods-AuthenticationLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,6 @@
 				77615A113AFE4E3E52F8ABF5 /* Pods-AuthenticationLibrary_Tests.debug.xcconfig */,
 				5574E85B46B081ACF19C8DF5 /* Pods-AuthenticationLibrary_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

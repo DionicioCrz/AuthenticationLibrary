@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AuthenticationLibrary'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of AuthenticationLibrary.'
+  s.summary          = 'A library for implementing an authentication flow using AWS Cognito.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,7 +28,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/DionicioCrz/AuthenticationLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
+  s.swift_version = "5.0"
 
   s.source_files = 'AuthenticationLibrary/Classes/**/*'
   
@@ -36,6 +37,12 @@ TODO: Add long description of the pod here.
   #   'AuthenticationLibrary' => ['AuthenticationLibrary/Assets/*.png']
   # }
 
+  s.dependency 'AWSMobileClient', '~> 2.30.2'
+  s.dependency 'AWSUserPoolsSignIn', '~> 2.30.2'
+  s.dependency 'AWSAuthUI', '~> 2.30.2'
+  s.dependency 'KeychainSwift'
+  s.frameworks = 'SwiftUI', 'Combine'
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
