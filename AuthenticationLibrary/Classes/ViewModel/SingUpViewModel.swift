@@ -8,19 +8,19 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-class SignUpViewModel: AuthViewModel {
-    @Published var email: String = ""
-    @Published var password: String = ""
-    @Published var confirmPassword: String = ""
-    @Published var showConfirmationCodeView: Bool = false
+public class SignUpViewModel: AuthViewModel {
+    @Published public var email: String = ""
+    @Published public var password: String = ""
+    @Published public var confirmPassword: String = ""
+    @Published public var showConfirmationCodeView: Bool = false
     
     private let keychain = KeychainManager()
     
-    override init(authManager: AuthManager) {
+    override public init(authManager: AuthManager) {
         super.init(authManager: authManager)
     }
     
-    func signUp() {
+    public func signUp() {
         guard !email.isEmpty, !password.isEmpty, password == confirmPassword else {
             authManager.errorMessage = "Please enter a valid email and matching passwords."
             handleActionResult()

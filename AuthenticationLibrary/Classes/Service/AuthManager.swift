@@ -10,7 +10,7 @@ import AWSMobileClient
 import SwiftUI
 
 @available(iOS 13.0, *)
-public class AuthManager: ObservableObject {
+open class AuthManager: ObservableObject {
     @Published public var authState: AuthState = .login
     @Published public var isLoggedIn: Bool = false
     @Published public var errorMessage: String? = nil
@@ -22,15 +22,15 @@ public class AuthManager: ObservableObject {
         checkUserState()
     }
 
-    public func showSignUp() {
+    open func showSignUp() {
         authState = .signUp
     }
 
-    public func showLogin() {
+    open func showLogin() {
         authState = .login
     }
 
-    public func initializeAWS() {
+    open func initializeAWS() {
         AWSMobileClient.default().initialize { (userState, error) in
             if let error = error {
                 print("Error initializing AWSMobileClient: \(error.localizedDescription)")
@@ -40,7 +40,7 @@ public class AuthManager: ObservableObject {
         }
     }
 
-    public func checkUserState() {
+    open func checkUserState() {
         authService.checkUserState { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
@@ -54,7 +54,7 @@ public class AuthManager: ObservableObject {
         }
     }
 
-    public func signUp(username: String, password: String, attributes: [String: String]) {
+    open func signUp(username: String, password: String, attributes: [String: String]) {
         authService.signUp(username: username, password: password, attributes: attributes) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
@@ -69,7 +69,7 @@ public class AuthManager: ObservableObject {
         }
     }
 
-    public func confirmSignUp(username: String, confirmationCode: String) {
+    open func confirmSignUp(username: String, confirmationCode: String) {
         authService.confirmSignUp(username: username, confirmationCode: confirmationCode) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
@@ -82,7 +82,7 @@ public class AuthManager: ObservableObject {
         }
     }
 
-    public func signIn(username: String, password: String) {
+    open func signIn(username: String, password: String) {
         authService.signIn(username: username, password: password) { [weak self] result in
             DispatchQueue.main.async {
                 if case .success(let signInResult) = result, signInResult == .signedIn {
@@ -95,7 +95,7 @@ public class AuthManager: ObservableObject {
         }
     }
 
-    public func signOut() {
+    open func signOut() {
         authService.signOut { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
@@ -109,7 +109,7 @@ public class AuthManager: ObservableObject {
         }
     }
 
-    public func handleError(_ error: AuthError) {
+    open func handleError(_ error: AuthError) {
         switch error {
         case .awsError(let awsError):
             self.errorMessage = awsError.stringMessage
@@ -118,11 +118,11 @@ public class AuthManager: ObservableObject {
         }
     }
 
-    public func clearErrorMessage() {
+    open func clearErrorMessage() {
         self.errorMessage = nil
     }
 
-    public var errorTextView: some View {
+    open var errorTextView: some View {
         if let errorMessage = errorMessage {
             return AnyView(Text(errorMessage)
                 .foregroundColor(.red))

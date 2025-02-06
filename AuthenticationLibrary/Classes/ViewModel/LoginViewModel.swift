@@ -8,32 +8,32 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-class LoginViewModel: AuthViewModel {
-    @Published var email: String = ""
-    @Published var password: String = ""
+public class LoginViewModel: AuthViewModel {
+    @Published public var email: String = ""
+    @Published public var password: String = ""
     
     private let keychain: KeychainManager
 
-    init(authManager: AuthManager, keychain: KeychainManager = KeychainManager()) {
+    public init(authManager: AuthManager, keychain: KeychainManager = KeychainManager()) {
         self.keychain = keychain
         super.init(authManager: authManager)
         loadCredentials()
     }
 
-    func login() {
+    public func login() {
         authManager.signIn(username: email, password: password)
         handleActionResult()
     }
 
-    func signUp() {
+    public func signUp() {
         authManager.showSignUp()
     }
 
-    func loadCredentials() {
+    public func loadCredentials() {
         email = keychain.get(key: "email") ?? ""
     }
 
-    override func clearErrorMessage() {
+    override public func clearErrorMessage() {
         super.clearErrorMessage()
     }
 }

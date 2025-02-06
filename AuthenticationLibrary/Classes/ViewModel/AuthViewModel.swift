@@ -10,17 +10,17 @@ import Combine
 
 @available(iOS 13.0, *)
 public class AuthViewModel: ObservableObject {
-    @Published var showError: Bool = false
+    @Published public var showError: Bool = false
     public var authManager: AuthManager
     
     private var cancellables = Set<AnyCancellable>()
     
-    init(authManager: AuthManager) {
+    public init(authManager: AuthManager) {
         self.authManager = authManager
         observeErrorMessage()
     }
     
-    func clearErrorMessage() {
+    public func clearErrorMessage() {
         authManager.clearErrorMessage()
         showError = false
     }
@@ -35,7 +35,7 @@ public class AuthViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    func handleActionResult() {
+    public func handleActionResult() {
         showError = authManager.errorMessage != nil
     }
 }

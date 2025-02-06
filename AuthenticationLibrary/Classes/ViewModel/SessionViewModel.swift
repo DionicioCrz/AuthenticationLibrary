@@ -9,7 +9,7 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public class SessionViewModel: AuthViewModel {
-    @Published var user: String
+    @Published public var user: String
     
     public init(authManager: AuthManager, user: String) {
         self.user = user
