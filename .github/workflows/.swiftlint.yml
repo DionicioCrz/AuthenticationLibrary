@@ -1,0 +1,15 @@
+reporter: github-actions
+
+opt_in_rules:
+  - trailing_whitespace
+  - line_length
+  - comment_spacing
+
+disabled_rules:
+  - force_cast
+  - force_try
+
+severity:
+  trailing_whitespace: warning
+  line_length: warning
+  comment_spacing: warning
