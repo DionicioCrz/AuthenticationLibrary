@@ -1,0 +1,40 @@
+name: iOS CI
+
+on:
+  pull_request:
+    branches: [ develop, main ]
+  push:
+    branches: [ develop ]
+
+jobs:
+  build-test:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Xcode
+        run: sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+
+      - name: Install SwiftLint
+        run: brew install swiftlint
+
+      - name: Run SwiftLint
+        run: swiftlint --strict
+
+      - name: Install Looper
+        run: brew install looper
+
+      - name: Run Unit Tests
+        run: |
+          xcodebuild test \
+          -scheme TuEsquema \
+          -destination 'platform=iOS Simulator,name=iPhone 15' \
+          -enableCodeCoverage YES | xcpretty && exit ${PIPESTATUS[0]}
+
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: build/reports
