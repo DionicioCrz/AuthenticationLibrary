@@ -47,7 +47,7 @@ final class ConfirmationViewModelTests: XCTestCase {
         
         // Then
         XCTAssertTrue(authManager.confirmSignUpCalled)
-        XCTAssertEqual(authManager.authState, .confirmCode(username: "example@mail.com"))
+        XCTAssertEqual(authManager.authState, .confirmCode(username: "exampssle@mail.com"))
         XCTAssertEqual(authManager.errorMessage, "Invalid confirmation code")
     }
     
