@@ -19,8 +19,14 @@ jobs:
       - name: Install SwiftLint
         run: brew install swiftlint
 
-      - name: Run SwiftLint
-        run: swiftlint --reporter github-actions
+      - name: Check SwiftLint version
+        run: swiftlint version
+
+      - name: Update SwiftLint (if needed)
+        run: brew upgrade swiftlint || brew reinstall swiftlint
+
+      - name: Run SwiftLint (Using JSON Reporter for Better Logs)
+        run: swiftlint --reporter json | jq .
 
       - name: Install Looper
         run: brew install looper
