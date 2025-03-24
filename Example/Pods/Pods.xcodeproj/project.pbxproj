@@ -257,7 +257,6 @@
 		ACE67BAF2B30E29E3304F5DC4A3156D6 /* AWSURLRequestRetryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1DDC21317B01A0BAC36695612AEBA /* AWSURLRequestRetryHandler.m */; };
 		ADDD8C2E0F363EEBEEFE311045C8317C /* AWSDDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 37040FBAA7B7431576BACB8845A2EA5B /* AWSDDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF6F0A96430D8E54985F658191470089 /* AWSInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F86D5D272836E2A18F1F0B9882EDF6F7 /* AWSInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B025339F902BD9EB35865BAB1711D43E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426DD1FBA4DA3B009E53D49B03B51CC /* ReplaceMe.swift */; };
 		B04EAD0C4BAAFD6821D54B6A34A46D82 /* AWSAuthUIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D3D3236E4DB181F6F0379F92242389 /* AWSAuthUIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1CE17463CF39C765C59B7DF18241E75 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1CD727B37D9D3BCDAF695D25B12F1C /* SettingsView.swift */; };
 		B314B5A312926B44DB90D04E7F279682 /* AuthenticationLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF211F03F4026871AF6B0F667A1303D3 /* AuthenticationLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -808,7 +807,6 @@
 		82B0668AB9A26A8049E896218D22270E /* AWSCognitoIdentityUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityUser.h; path = AWSCognitoIdentityProvider/AWSCognitoIdentityUser.h; sourceTree = "<group>"; };
 		82C00CC59F265857F37A10AD10FF2A9A /* SignInUIOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignInUIOptions.swift; path = AWSAuthSDK/Sources/AWSMobileClient/Models/SignInUIOptions.swift; sourceTree = "<group>"; };
 		83A7E33E6882700FC8B3E8265F031EE0 /* AWSTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTaskCompletionSource.h; path = AWSCore/Bolts/AWSTaskCompletionSource.h; sourceTree = "<group>"; };
-		8426DD1FBA4DA3B009E53D49B03B51CC /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AuthenticationLibrary/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		852CE9A188B02B32674DD035866D8B88 /* AWSMobileClient+AWSIdentityProviderManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AWSMobileClient+AWSIdentityProviderManager.swift"; path = "AWSAuthSDK/Sources/AWSMobileClient/Helpers/IdentityPoolHelper/AWSMobileClient+AWSIdentityProviderManager.swift"; sourceTree = "<group>"; };
 		85BF786F8173A519E06283773463956F /* AuthService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		86162F06B0CF8182A2054AABD7C1E1C9 /* AWSXMLDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSXMLDictionary.m; path = AWSCore/XMLDictionary/AWSXMLDictionary.m; sourceTree = "<group>"; };
@@ -1169,7 +1167,6 @@
 			isa = PBXGroup;
 			children = (
 				8BF01727B869FEE80CA3DDCFF1BB2807 /* AuthApp.swift */,
-				8426DD1FBA4DA3B009E53D49B03B51CC /* ReplaceMe.swift */,
 				2374FA4A904FDA272690C8B82168FF0C /* Extensions */,
 				FBCAC8E79CBEAF839C358A1CF818EED7 /* Pod */,
 				1F69E66F6096F28DE0576588880B5116 /* Service */,
@@ -2652,7 +2649,6 @@
 				F52DBC750782EE9D161270E036B89A72 /* CredentialStorage.swift in Sources */,
 				CC3677A5BF212AC3A6E8F00FC05C402C /* LoginView.swift in Sources */,
 				64C38D03131C2BAB612EA2F95136028F /* LoginViewModel.swift in Sources */,
-				B025339F902BD9EB35865BAB1711D43E /* ReplaceMe.swift in Sources */,
 				ABD35824610EFB055100E4A116B9A8EB /* SessionView.swift in Sources */,
 				945B18235CCDA0953C86224B9D719B37 /* SessionViewModel.swift in Sources */,
 				B1CE17463CF39C765C59B7DF18241E75 /* SettingsView.swift in Sources */,

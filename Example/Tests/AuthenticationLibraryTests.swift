@@ -26,7 +26,7 @@ final class AuthenticationLibraryTests: XCTestCase {
     }
     
     func testCheckUserStateLoggedIn() {
-        let expectation = self.expectation(description: "Check user state should set the correct auth state")
+        let expectation = self.expectation(description: "Check user state should set the correct auth state extra words")
         
         mockAuthService.checkUserStateResult = .success(.signedIn)
         authManager.checkUserState()
